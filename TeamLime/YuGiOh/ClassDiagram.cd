@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="YuGiOh.Cards.Card">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAgAAQAIAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Cards\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YuGiOh.Cards.Monster">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAgAAAAAAAIEAAACBAAAAAgAAAAI=</HashCode>
+      <FileName>Cards\Monster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YuGiOh.Cards.Spell">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YuGiOh.Cards.Trap">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cards\Trap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="YuGiOh.Cards.Attribute" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAgAAAAAkAABAAAAEAAAAAAA=</HashCode>
+      <FileName>Cards\Attribute.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
