@@ -45,6 +45,7 @@
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\Monster.cs" />
     <Compile Include="CardFactory.cs" />
+    <Compile Include="Graveyard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cards\Spell.cs" />
     <Compile Include="Cards\Trap.cs" />
