@@ -1,6 +1,6 @@
 ﻿namespace YuGiOh.Cards
 {
-    public enum Attribute
+    public enum MonsterAttribute
     {
         Dark,
         Earth,

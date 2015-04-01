@@ -7,9 +7,9 @@
         private int attack;
         private int defence;
         private int level;
-        private Attribute attribute;
+        private MonsterAttribute attribute;
 
-        public Monster(string name, Attribute attribute, int attack, int defence, int level, string infoText, string pathToImage)
+        public Monster(string name, MonsterAttribute attribute, int attack, int defence, int level, string infoText, string pathToImage)
             : base(name, infoText, pathToImage)
         {
             this.Attack = attack;
@@ -69,7 +69,7 @@
             }
         }
 
-        public Attribute Attribute
+        public MonsterAttribute Attribute
         {
             get
             {
