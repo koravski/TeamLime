@@ -3,7 +3,14 @@
     using System;
     using YuGiOh.Interfaces;
 
+<<<<<<< HEAD
     public class Monster : Card,IMonster
+=======
+    using YuGiOh.Interfaces;
+    using YuGiOh.Misc;
+
+    public class Monster : Card, IMonster
+>>>>>>> origin/master
     {
         private int attack;
         private int defence;
@@ -80,6 +87,12 @@
             {
                 this.attribute = value;
             }
+        }
+
+        public void ProcessInteraction(IMonster enemy)
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
         }
     }
 }

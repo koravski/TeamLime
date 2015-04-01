@@ -1,4 +1,4 @@
-﻿namespace YuGiOh.Cards
+﻿namespace YuGiOh.Misc
 {
     public enum MonsterAttribute
     {
