@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Interfaces
 {
-    interface ISpell
+    interface ISpell : ICard
     {
+        void CastAreaOfEffect(IHand playerHand, IHand enemyHand);
+
+        void CastSingleTarget(ICard target);
     }
 }

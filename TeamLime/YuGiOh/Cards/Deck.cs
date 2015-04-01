@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+
     using YuGiOh.Interfaces;
 
     class Deck: IDeck

@@ -42,7 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cards\Deck.cs" />
-    <Compile Include="Cards\MonsterAttribute.cs" />
+    <Compile Include="Interfaces\IHand.cs" />
+    <Compile Include="Misc\MonsterAttribute.cs" />
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\Monster.cs" />
     <Compile Include="CardFactory.cs" />
@@ -58,8 +59,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cards\Spell.cs" />
     <Compile Include="Cards\Trap.cs" />
-    <Compile Include="Cards\SpellTypes.cs" />
-    <Compile Include="Cards\TrapTypes.cs" />
+    <Compile Include="Misc\SpellTypes.cs" />
+    <Compile Include="Misc\TrapTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

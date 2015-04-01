@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Interfaces
 {
-    interface ICard
+    public interface ICard
     {
+        string Name { get; set; }
+
+        string InfoText { get; set; }
+
+        string PathToImage { get; set; }
     }
 }

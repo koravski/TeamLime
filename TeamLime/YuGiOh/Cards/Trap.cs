@@ -1,5 +1,7 @@
 ﻿namespace YuGiOh.Cards
 {
+    using YuGiOh.Misc;
+
     public  class Trap : Card
     {
         private TrapTypes trapType;

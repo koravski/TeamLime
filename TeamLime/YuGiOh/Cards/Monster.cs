@@ -2,6 +2,8 @@
 {
     using System;
 
+    using YuGiOh.Misc;
+
     public class Monster : Card
     {
         private int attack;

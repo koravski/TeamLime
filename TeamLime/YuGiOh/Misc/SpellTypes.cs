@@ -1,4 +1,4 @@
-﻿namespace YuGiOh
+﻿namespace YuGiOh.Misc
 {
     public enum SpellTypes
     {

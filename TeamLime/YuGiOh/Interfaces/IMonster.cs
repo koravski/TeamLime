@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Interfaces
 {
-    interface IMonster
+    using YuGiOh.Misc;
+
+    interface IMonster : ICard
     {
+        int Attack { get; set; }
+
+        int Defence { get; set; }
+
+        int Level { get; set; }
+
+        MonsterAttribute Attribute { get; set; }
+
+        void ProcessInteraction(IMonster enemy);
     }
 }
