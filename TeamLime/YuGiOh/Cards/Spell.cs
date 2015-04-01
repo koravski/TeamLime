@@ -1,6 +1,6 @@
 ﻿namespace YuGiOh.Cards
 {
-    public abstract class Spell : Card
+    public  class Spell : Card
     {
         private SpellTypes spellType;
 

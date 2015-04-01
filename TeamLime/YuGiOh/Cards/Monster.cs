@@ -2,7 +2,7 @@
 {
     using System;
 
-    public abstract class Monster : Card
+    public class Monster : Card
     {
         private int attack;
         private int defence;

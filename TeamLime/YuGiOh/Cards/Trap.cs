@@ -1,6 +1,6 @@
 ﻿namespace YuGiOh.Cards
 {
-    public abstract class Trap : Card
+    public  class Trap : Card
     {
         private TrapTypes trapType;
 
