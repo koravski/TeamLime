@@ -41,17 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="CardsInHand.cs" />
     <Compile Include="Cards\MonsterAttribute.cs" />
-=======
-    <Compile Include="Cards\Deck.cs" />
-    <Compile Include="Interfaces\IHand.cs" />
-    <Compile Include="Misc\MonsterAttribute.cs" />
->>>>>>> origin/master
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\Monster.cs" />
-    <Compile Include="CardFactory.cs" />
+    <Compile Include="YuGiOhGameMainUI.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Extensions\RandomProvider.cs" />
@@ -70,14 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cards\Spell.cs" />
     <Compile Include="Cards\Trap.cs" />
-<<<<<<< HEAD
     <Compile Include="Cards\SpellTypes.cs" />
     <Compile Include="Cards\TrapTypes.cs" />
     <Compile Include="YuGiOhGame.cs" />
-=======
-    <Compile Include="Misc\SpellTypes.cs" />
-    <Compile Include="Misc\TrapTypes.cs" />
->>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

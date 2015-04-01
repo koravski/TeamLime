@@ -1,12 +1,10 @@
 ﻿namespace YuGiOh
 {
+    using YuGiOh.Cards;
     using System.Collections.Generic;
     using System;
 
-    using YuGiOh.Cards;
-    using YuGiOh.Misc;
-
-    public class CardFactory
+    public class YuGiOhGameMainUI
     {
         public static void Main()
         {

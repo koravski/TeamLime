@@ -1,4 +1,4 @@
-﻿namespace YuGiOh.Misc
+﻿namespace YuGiOh
 {
     public enum TrapTypes
     {

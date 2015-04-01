@@ -3,11 +3,6 @@
     using System;
     using YuGiOh.Interfaces;
 
-<<<<<<< HEAD
-=======
-    using YuGiOh.Interfaces;
-
->>>>>>> origin/master
     public abstract class Card : ICard
     {
         private string name;
