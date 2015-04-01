@@ -2,9 +2,24 @@
 {
     public abstract class Trap : Card
     {
-        public Trap(string name, string infoText, string pathToImage)
+        private TrapTypes trapType;
+
+        public Trap(string name, TrapTypes trapType, string infoText, string pathToImage)
             : base(name, infoText, pathToImage)
-        { 
+        {
+            this.trapType = trapType;
+        }
+
+        public TrapTypes Traptype
+        {
+            get
+            {
+                return this.trapType;
+            }
+            set
+            {
+                this.trapType = value;
+            }
         }
     }
 }

@@ -2,9 +2,24 @@
 {
     public abstract class Spell : Card
     {
-        public Spell(string name, string infoText, string pathToImage)
+        private SpellTypes spellType;
+
+        public Spell(string name, SpellTypes spellType, string infoText, string pathToImage)
             : base(name, infoText, pathToImage)
-        { 
+        {
+            this.SpellType = spellType;
+        }
+
+        public SpellTypes SpellType
+        {
+            get
+            {
+                return this.spellType;
+            }
+            set
+            {
+                this.spellType = value;
+            }
         }
     }
 }
