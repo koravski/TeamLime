@@ -1,6 +1,6 @@
 ﻿namespace YuGiOh.Interfaces
 {
-    public interface ITrap
+    public interface IPlayer
     {
 
     }

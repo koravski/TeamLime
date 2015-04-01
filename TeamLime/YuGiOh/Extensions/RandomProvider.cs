@@ -1,4 +1,4 @@
-﻿namespace Santase.Logic.Extensions
+﻿namespace YuGiOh.Extensions
 {
     using System;
 

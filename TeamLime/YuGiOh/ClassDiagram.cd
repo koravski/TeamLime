@@ -6,6 +6,7 @@
       <HashCode>AAAEAAAAAAAAAAAAAAAgAAQAIAAEAAAAAAAAAAAABAA=</HashCode>
       <FileName>Cards\Card.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="YuGiOh.Cards.Monster">
     <Position X="0.5" Y="4" Width="1.5" />
@@ -13,6 +14,7 @@
       <HashCode>AAAAAAAAAAACAAAAAgAAAAAAAIEAAACBAAAAAgAAAAI=</HashCode>
       <FileName>Cards\Monster.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="YuGiOh.Cards.Spell">
     <Position X="2.75" Y="4" Width="1.5" />
@@ -20,6 +22,7 @@
       <HashCode>AAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cards\Spell.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="YuGiOh.Cards.Trap">
     <Position X="5" Y="4" Width="1.5" />
@@ -27,13 +30,15 @@
       <HashCode>AAAAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cards\Trap.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="YuGiOh.Deck">
     <Position X="7.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAQABAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Enum Name="YuGiOh.Cards.MonsterAttribute" Collapsed="true">
     <Position X="7.5" Y="0.5" Width="1.5" />

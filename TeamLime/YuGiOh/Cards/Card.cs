@@ -1,8 +1,9 @@
 ﻿namespace YuGiOh.Cards
 {
     using System;
+    using YuGiOh.Interfaces;
 
-    public abstract class Card
+    public abstract class Card : ICard
     {
         private string name;
         private string infoText;

@@ -1,6 +1,8 @@
 ﻿namespace YuGiOh.Cards
 {
-    public  class Trap : Card
+    using YuGiOh.Interfaces;
+
+    public  class Trap : Card,ITrap
     {
         private TrapTypes trapType;
 

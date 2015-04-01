@@ -3,10 +3,15 @@
     using System;
     using YuGiOh.Cards;
     using System.Collections.Generic;
-    public abstract class Graveyard
+    public class Graveyard
     {
-        private List<Card> cardsInGraveyard = new List<Card>();
+        private List<Card> cardsInGraveyard;
         private int numberOfCardsInGraveyard;
+
+        public Graveyard()
+        {
+            this.cardsInGraveyard = new List<Card>();
+        }
 
         public List<Card> CardsInGraveyard
         {

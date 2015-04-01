@@ -1,6 +1,8 @@
 ﻿namespace YuGiOh.Cards
 {
-    public  class Spell : Card
+    using YuGiOh.Interfaces;
+
+    public  class Spell : Card,ISpell
     {
         private SpellTypes spellType;
 

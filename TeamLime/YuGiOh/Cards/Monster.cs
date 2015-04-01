@@ -1,8 +1,9 @@
 ﻿namespace YuGiOh.Cards
 {
     using System;
+    using YuGiOh.Interfaces;
 
-    public class Monster : Card
+    public class Monster : Card,IMonster
     {
         private int attack;
         private int defence;

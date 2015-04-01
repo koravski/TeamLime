@@ -1,0 +1,7 @@
+﻿namespace YuGiOh
+{
+    class Enemy
+    {
+
+    }
+}
