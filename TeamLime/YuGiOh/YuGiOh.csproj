@@ -41,11 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cards\Deck.cs" />
     <Compile Include="Cards\MonsterAttribute.cs" />
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\Monster.cs" />
     <Compile Include="CardFactory.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="Extensions\RandomProvider.cs" />
+    <Compile Include="Extensions\ShuffleTheDeck.cs" />
     <Compile Include="Graveyard.cs" />
+    <Compile Include="Interfaces\ICard.cs" />
+    <Compile Include="Interfaces\IDeck.cs" />
+    <Compile Include="Interfaces\IMonster.cs" />
+    <Compile Include="Interfaces\ISpell.cs" />
+    <Compile Include="Interfaces\ITrap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cards\Spell.cs" />
     <Compile Include="Cards\Trap.cs" />

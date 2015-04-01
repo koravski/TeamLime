@@ -28,6 +28,13 @@
       <FileName>Cards\Trap.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="YuGiOh.Deck">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="YuGiOh.Cards.MonsterAttribute" Collapsed="true">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
