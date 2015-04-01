@@ -2,7 +2,9 @@
 {
     using System;
 
-    public abstract class Card
+    using YuGiOh.Interfaces;
+
+    public abstract class Card : ICard
     {
         private string name;
         private string infoText;

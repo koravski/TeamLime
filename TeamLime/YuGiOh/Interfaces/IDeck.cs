@@ -1,12 +1,13 @@
-﻿
-namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Interfaces
 {
-    using YuGiOh.Cards;
-
     interface IDeck
     {
-        Card DrawCard();
+        ICard DrawCard();
 
-        int CardsLeft { get; }
+        void AddCardOnTop(ICard card);
+
+        void Shuffle();
+
+        int CardsLeft();
     }
 }

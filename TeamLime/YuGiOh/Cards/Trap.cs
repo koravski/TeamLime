@@ -1,9 +1,11 @@
 ﻿namespace YuGiOh.Cards
 {
+    using System;
+    using YuGiOh.Interfaces;
     using YuGiOh.Misc;
 
-    public  class Trap : Card
-    {
+    public  class Trap : Card, ITrap
+    {        
         private TrapTypes trapType;
 
         public Trap(string name, TrapTypes trapType, string infoText, string pathToImage)
@@ -22,6 +24,12 @@
             {
                 this.trapType = value;
             }
+        }
+
+        public void ReactToAction(ICard target, IHand playerHand, IHand enemyHand)
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
         }
     }
 }

@@ -2,9 +2,10 @@
 {
     using System;
 
+    using YuGiOh.Interfaces;
     using YuGiOh.Misc;
 
-    public class Monster : Card
+    public class Monster : Card, IMonster
     {
         private int attack;
         private int defence;
@@ -81,6 +82,12 @@
             {
                 this.attribute = value;
             }
+        }
+
+        public void ProcessInteraction(IMonster enemy)
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
         }
     }
 }

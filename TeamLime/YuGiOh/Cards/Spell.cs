@@ -1,8 +1,10 @@
 ﻿namespace YuGiOh.Cards
 {
+    using System;
+    using YuGiOh.Interfaces;
     using YuGiOh.Misc;
 
-    public  class Spell : Card
+    public  class Spell : Card, ISpell
     {
         private SpellTypes spellType;
 
@@ -22,6 +24,18 @@
             {
                 this.spellType = value;
             }
+        }
+
+        public void CastAreaOfEffect(IHand playerHand, IHand enemyHand)
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
+        }
+
+        public void CastSingleTarget(ICard target)
+        {
+            // TODO: Implement this method
+            throw new NotImplementedException();
         }
     }
 }
