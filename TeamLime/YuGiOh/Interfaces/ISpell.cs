@@ -2,6 +2,6 @@
 {
     public interface ISpell
     {
-
+        SpellTypes SpellType { get; set; }
     }
 }
