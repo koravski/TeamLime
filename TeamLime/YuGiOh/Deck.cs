@@ -21,12 +21,14 @@ namespace YuGiOh
 
         public Cards.Card DrawNextCard()
         {
-            throw new NotImplementedException();
+            Card drawCard = this.allYuGiOhCards[0];
+            this.allYuGiOhCards.RemoveAt(0);
+            return drawCard;
         }
 
         public int CardsLeft
         {
-            get { throw new NotImplementedException(); }
+            get { return this.allYuGiOhCards.Count(); }
         }
 
 
