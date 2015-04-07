@@ -7,11 +7,11 @@ Features
 
 - Attack between monsters
 - Play a card from hand
--Attack to defense mode
--Implemented three types of card
-	-Monster Card
-	-Spell Card
-	-Trap Card
+- Attack to defense mode
+- Implemented three types of card
+	- Monster Card
+	- Spell Card
+	- Trap Card
 
 
 Installation
