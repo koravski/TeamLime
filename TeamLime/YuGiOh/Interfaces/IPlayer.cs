@@ -1,4 +1,4 @@
-﻿namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Players
 {
     public interface IPlayer
     {

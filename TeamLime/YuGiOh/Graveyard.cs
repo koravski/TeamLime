@@ -2,8 +2,9 @@
 {
     using System;
     using YuGiOh.Cards;
+    using YuGiOh.Players;
     using System.Collections.Generic;
-    public class Graveyard
+    public class Graveyard:IGraveyard
     {
         private List<Card> cardsInGraveyard;
         private int numberOfCardsInGraveyard;

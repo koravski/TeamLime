@@ -1,17 +1,17 @@
 ﻿namespace YuGiOh.Cards
 {
     using System;
-    using YuGiOh.Interfaces;
+    using YuGiOh.Players;
 
-    public class Monster : Card,IMonster
+    public abstract class Monster : Card,IMonster
     {
         private int attack;
         private int defence;
         private int level;
         private MonsterAttribute attribute;
 
-        public Monster(string name, MonsterAttribute attribute, int attack, int defence, int level, string infoText, string pathToImage)
-            : base(name, infoText, pathToImage)
+        public Monster(MonsterAttribute attribute, int attack, int defence, int level, string infoText, string pathToImage)
+            : base(infoText, pathToImage)
         {
             this.Attack = attack;
             this.Defence = defence;

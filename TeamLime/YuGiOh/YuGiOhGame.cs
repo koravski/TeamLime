@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YuGiOh
 {
-    using YuGiOh.Interfaces;
+    using YuGiOh.Players;
 
     public class YuGiOhGame: IYuGiOhGame
     {
@@ -25,10 +25,6 @@ namespace YuGiOh
         {
             get { throw new NotImplementedException(); }
         }
-
-        public int RoundsPlayed
-        {
-            get { throw new NotImplementedException(); }
-        }
+ 
     }
 }

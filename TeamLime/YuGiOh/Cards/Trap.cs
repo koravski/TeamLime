@@ -1,13 +1,13 @@
 ﻿namespace YuGiOh.Cards
 {
-    using YuGiOh.Interfaces;
+    using YuGiOh.Players;
 
-    public  class Trap : Card,ITrap
+    public  abstract class Trap : Card,ITrap
     {
         private TrapTypes trapType;
 
-        public Trap(string name, TrapTypes trapType, string infoText, string pathToImage)
-            : base(name, infoText, pathToImage)
+        public Trap(TrapTypes trapType, string infoText, string pathToImage)
+            : base(infoText, pathToImage)
         {
             this.trapType = trapType;
         }

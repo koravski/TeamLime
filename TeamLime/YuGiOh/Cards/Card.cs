@@ -1,37 +1,18 @@
 ﻿namespace YuGiOh.Cards
 {
     using System;
-    using YuGiOh.Interfaces;
+    using YuGiOh.Players;
 
     public abstract class Card : ICard
     {
-        private string name;
         private string infoText;
         private string pathToImage;
 
-        public Card(string name, string infoText, string pathToImage)
+        public Card(string infoText, string pathToImage)
         {
-            this.Name = name;
             this.InfoText = infoText;
             this.PathToImage = pathToImage;
         }
-
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("The card must have a name");
-                }
-                this.name = value;
-            }
-        }
-
         public string InfoText
         {
             get

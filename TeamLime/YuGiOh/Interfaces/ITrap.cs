@@ -1,7 +1,7 @@
-﻿namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Players
 {
     public interface ITrap
     {
-
+        TrapTypes Traptype { get; set; }
     }
 }

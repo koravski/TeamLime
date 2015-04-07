@@ -1,4 +1,4 @@
-﻿namespace YuGiOh.Interfaces
+﻿namespace YuGiOh.Players
 {
     public interface IYuGiOhGame
     {
@@ -8,6 +8,5 @@
 
         int SecondPlayerTotalPoints { get; }
 
-        int RoundsPlayed { get; }
     }
 }

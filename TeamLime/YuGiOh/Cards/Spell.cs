@@ -1,13 +1,13 @@
 ﻿namespace YuGiOh.Cards
 {
-    using YuGiOh.Interfaces;
+    using YuGiOh.Players;
 
-    public  class Spell : Card,ISpell
+    public  abstract class Spell : Card,ISpell
     {
         private SpellTypes spellType;
 
-        public Spell(string name, SpellTypes spellType, string infoText, string pathToImage)
-            : base(name, infoText, pathToImage)
+        public Spell(SpellTypes spellType, string infoText, string pathToImage)
+            : base(infoText, pathToImage)
         {
             this.SpellType = spellType;
         }

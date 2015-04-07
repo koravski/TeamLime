@@ -1,5 +1,5 @@
 ﻿
-namespace YuGiOh.Interfaces
+namespace YuGiOh.Players
 {
     using YuGiOh.Cards;
     using System.Collections.Generic;
