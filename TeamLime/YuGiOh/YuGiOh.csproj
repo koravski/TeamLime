@@ -45,6 +45,16 @@
     <Compile Include="Cards\MonsterAttribute.cs" />
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\Monster.cs" />
+    <Compile Include="Cards\SpellCards\DoubleSummon.cs" />
+    <Compile Include="Cards\SpellCards\LightningVortex.cs" />
+    <Compile Include="Cards\SpellCards\MysticalSpaceTyphoon.cs" />
+    <Compile Include="Cards\SpellCards\PotOfGreed.cs" />
+    <Compile Include="Cards\SpellCards\Raigeki.cs" />
+    <Compile Include="Cards\SpellCards\SwordsOfRevealingLight.cs" />
+    <Compile Include="Cards\TrapCards\DivineWrath.cs" />
+    <Compile Include="Cards\TrapCards\MirrorForce.cs" />
+    <Compile Include="Cards\TrapCards\NegateAttack.cs" />
+    <Compile Include="Cards\TrapCards\WallOfRevealingLight.cs" />
     <Compile Include="YuGiOhGameMainUI.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Enemy.cs" />
@@ -53,7 +63,7 @@
     <Compile Include="Graveyard.cs" />
     <Compile Include="Interfaces\ICard.cs" />
     <Compile Include="Interfaces\IDeck.cs" />
-    <Compile Include="Interfaces\IGravelyard.cs" />
+    <Compile Include="Interfaces\IGraveyard.cs" />
     <Compile Include="Interfaces\IMonster.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="Interfaces\ISpell.cs" />
