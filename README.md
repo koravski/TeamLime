@@ -1,5 +1,4 @@
 # TeamLime
-================
 
 # Telerik Academy Teamwork Project (Course OOP)
 --------
