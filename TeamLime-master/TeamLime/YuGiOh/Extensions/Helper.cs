@@ -20,7 +20,7 @@ namespace YuGiOh.Extensions.Helper
         public const string PlayerOneMoves = "../../Extensions/PlayersMoves/PlayerOneMoves.txt";
         public const string PlayerTwoMoves = "../../Extensions/PlayersMoves/PlayerTwoMoves.txt";
 
-        public const string BackgroundSound = "../../Sounds/Bground Music -DJ Sona Concussive .wav";
+        public const string BackgroundSound = "../../Sounds/Background Music - DJ Sona Ethereal.wav";
 
         public const string BackgroundSoundExtension = ".wav";
 
@@ -32,7 +32,7 @@ namespace YuGiOh.Extensions.Helper
 
         public static void GameSound(bool isOn)
         {
-            SoundPlayer player = new SoundPlayer(@"../../Sounds/Bground Music -DJ Sona Concussive .wav");
+            SoundPlayer player = new SoundPlayer(@"../../Sounds/Background Music - DJ Sona Ethereal.wav");
             if (!isOn)
             {
                 player.Stop();
