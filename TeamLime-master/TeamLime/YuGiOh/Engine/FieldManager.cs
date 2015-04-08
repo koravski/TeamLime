@@ -42,6 +42,7 @@ namespace YuGiOh.Engine
             }
 
             this.battlefield.cardsOnField.Add(card);
+            this.playerOne.SendCardToField(card);
             
         }
 

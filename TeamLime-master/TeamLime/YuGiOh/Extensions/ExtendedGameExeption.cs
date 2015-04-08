@@ -13,12 +13,12 @@
         public ExtendedGameExeption(string message)
             : base(message)
         {
-            
+
         }
         // call / implement OnProblem
     }
 
-    public class Observable 
+    public class Observable
     {
         //observable -/-observed
         public event EventHandler GeneralProblem;
@@ -33,7 +33,7 @@
         }
     }
 
-    public class Observer 
+    public class Observer
     {
         public void HandleEvent(object sender, EventArgs args)
         {

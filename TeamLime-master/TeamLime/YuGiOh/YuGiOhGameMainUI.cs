@@ -2,6 +2,7 @@
 {
     using System;
     using System.Threading;
+    using System.Linq;
     using System.Globalization;
 
     using YuGiOh.Cards;
@@ -12,7 +13,7 @@
     using YuGiOh.Extensions.Helper;
 
     public class YuGiOhGameMainUI
-    {       
+    {
         public static void Main()
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
@@ -34,7 +35,7 @@
 
             Console.ForegroundColor = ConsoleColor.Cyan;
 
-            Console.WriteLine("HERO {0} << 2000 Health >>\n",playerOne.Name);
+            Console.WriteLine("HERO {0} << 2000 Health >>\n", playerOne.Name);
 
             Console.WriteLine("------First Hero cards in hand-------\n");
             playerOne.VisionCardInHand();
@@ -48,20 +49,29 @@
             ICommandReader commandReader = new CommandReader();
 
             // Processing actions on the field
-            FieldManager fieldManager = new FieldManager(playerOne,playerTwo);
-            
-            
+            FieldManager fieldManager = new FieldManager(playerOne, playerTwo);
+
+
             while (true)
             {
-                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\nSir, enter your command:\n");
-                var commandLine = Console.ReadLine();
-                commandReader.RunCommand(fieldManager, commandLine);
 
-                playerOne.DrawNextCardInHand();
-                playerTwo.DrawNextCardInHand();
+                try
+                {
+                    var commandLine = Console.ReadLine();
+                    commandReader.RunCommand(fieldManager, commandLine);
 
-                if (playerOne.GeneralHealth <= 0 || playerOne.YuGiOhCardInHand.Count == 0 )
+                    playerOne.DrawNextCardInHand();
+                    playerTwo.DrawNextCardInHand();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+
+                if (playerOne.GeneralHealth <= 0 || playerOne.YuGiOhCardInHand.Count == 0)
                 {
                     Console.WriteLine("{0} is destoyed!/n------GAME OVER-----", playerOne.Name);
                 }
@@ -84,8 +94,13 @@
                 name = Console.ReadLine();
             }
 
+            if (name.Any(x => char.IsDigit(x)))
+            {
+                Console.WriteLine("Enter only letters, please! Try again.");
+                name = Console.ReadLine();
+            }
             return name;
         }
-      
+
     }
 }
