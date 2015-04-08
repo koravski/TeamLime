@@ -8,7 +8,7 @@
 
     public class BattleField
     {
-        IList<ICard> cardsOnField;
+        public IList<ICard> cardsOnField;
 
         public BattleField()
         {

@@ -85,5 +85,9 @@
             this.yuGiOhCardsInHand.Add(this.playerOneDeck.DrawNextCard());
         }
 
+        public void SendCardToField(ICard choosenCard)
+        {
+            this.yuGiOhCardsInHand.Remove(choosenCard);
+        }
     }
 }

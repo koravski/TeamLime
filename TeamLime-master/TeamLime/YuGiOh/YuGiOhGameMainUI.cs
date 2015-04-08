@@ -48,7 +48,7 @@
             ICommandReader commandReader = new CommandReader();
 
             // Processing actions on the field
-            FieldManager fieldManager = new FieldManager();
+            FieldManager fieldManager = new FieldManager(playerOne,playerTwo);
             
             
             while (true)
