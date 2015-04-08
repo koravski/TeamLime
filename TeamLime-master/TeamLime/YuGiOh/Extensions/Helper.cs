@@ -43,5 +43,11 @@ namespace YuGiOh.Extensions.Helper
                 player.PlayLooping();
             }
         }
+
+        public static void EventErrorSound(bool isOn)
+        {
+            SoundPlayer player = new SoundPlayer(@"../../Sounds/uh-oh-.wav");
+            player.Play();
+        }
     }
 }
