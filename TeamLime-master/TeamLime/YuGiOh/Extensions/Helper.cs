@@ -29,6 +29,7 @@ namespace YuGiOh.Extensions.Helper
         public const string GameMenuIntro = " ";
         public const string GameRules = " ";
 
+        public static bool PlaySound = true;
 
         public static void GameSound(bool isOn)
         {
