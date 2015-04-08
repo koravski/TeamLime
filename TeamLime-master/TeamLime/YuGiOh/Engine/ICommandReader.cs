@@ -4,6 +4,6 @@
 
     public interface ICommandReader
     {
-        void RunCommand(BattleManager battleManager, string command);
+        void RunCommand(FieldManager fieldManager, string command);
     }
 }

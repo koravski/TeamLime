@@ -25,17 +25,17 @@
 
         private readonly string[] possibleComands = new string[] { "play", "attack", "switch" };
 
-        public void RunCommand(BattleManager battleManager, string commandString)
+        public void RunCommand(FieldManager fieldManager, string commandString)
         {
             if (commandString == null)
             {
                 throw new ArgumentNullException("no command");
             }
 
-            ProcessCommand(battleManager, commandString);
+            ProcessCommand(fieldManager, commandString);
         }
 
-        private void ProcessCommand(BattleManager battleManager, string commandString)
+        private void ProcessCommand(FieldManager fieldManager, string commandString)
         {
             var commandSplitters = new char[] { ' ', '(', ')' };
             var commandArguments = commandString.Split(commandSplitters, StringSplitOptions.RemoveEmptyEntries);
@@ -47,29 +47,29 @@
 
             if (command == "play")
             {
-                ProcessPlayCommand(battleManager, commandArguments.Skip(1).ToArray());
+                ProcessPlayCommand(fieldManager, commandArguments.Skip(1).ToArray());
             }
             else if (command == "attack")
             {
-                ProcessAttackCommand(battleManager, commandArguments.Skip(1).ToArray());
+                ProcessAttackCommand(fieldManager, commandArguments.Skip(1).ToArray());
             }
 
             else if (command == "switch")
             {
-                ProcessSwitchCommand(battleManager, commandArguments.Skip(1).ToArray());
+                ProcessSwitchCommand(fieldManager, commandArguments.Skip(1).ToArray());
             }
         }
 
-        private void ProcessPlayCommand(BattleManager battleManager, string[] commandArguments)
+        private void ProcessPlayCommand(FieldManager fieldManager, string[] commandArguments)
         {
             CardId cardToPlay = new CardId(commandArguments[0], (PlayerIndentifier)int.Parse(commandArguments[1]));
 
-            //battleManager.Play(cardToPlay);
+            fieldManager.Play(cardToPlay);
         }
 
-        private void ProcessAttackCommand(BattleManager battleManager, string[] commandArguments)
+        private void ProcessAttackCommand(FieldManager fieldManager, string[] commandArguments)
         {
-            if (battleManager == null)
+            if (fieldManager == null)
             {
                 throw new ArgumentNullException("battleManager");
             }
@@ -87,14 +87,14 @@
             CardId atackingCard = new CardId(commandArguments[0], (PlayerIndentifier)int.Parse(commandArguments[1]));
             CardId defendingCard = new CardId(commandArguments[2], (PlayerIndentifier)int.Parse(commandArguments[3]));
 
-            //battleManager.Attack(atackingCard, defendingCard);
+            fieldManager.Attack(atackingCard, defendingCard);
         }
 
-        private void ProcessSwitchCommand(BattleManager battleManager, string[] commandArguments)
+        private void ProcessSwitchCommand(FieldManager fieldManager, string[] commandArguments)
         {
             CardId cardToSwitch = new CardId(commandArguments[0], (PlayerIndentifier)int.Parse(commandArguments[1]));
 
-            //battleManager.Switch(cardToSwitch);
+            fieldManager.Switch(cardToSwitch);
         }     
     }
 }

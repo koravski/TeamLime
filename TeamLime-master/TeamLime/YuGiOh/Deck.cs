@@ -41,7 +41,8 @@
         {
             return new List<ICard>
             {
-                //Monsters -16
+                //Monsters - 16
+
                 EkzodiA.Instance,
                 new ArchfiendSoldier(),
                 new ArchfiendSoldier(),
@@ -60,6 +61,7 @@
                 new MadDogOfDarkness(),
               
                 //Spells - 11
+
                 new DoubleSummon(),
                 new DoubleSummon(),
                 new Raigeki(),
@@ -73,6 +75,7 @@
                 new LightningVortex(),
                
                 //Traps -15
+
                new MirrorForce(),
                new MirrorForce(),
                new MirrorForce(),

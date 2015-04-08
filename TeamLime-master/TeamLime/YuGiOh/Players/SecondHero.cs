@@ -14,12 +14,14 @@
         private IDeck playerTwoDeck;
         private List<ICard> yuGiOhCardsInHand;
         private int generalHealthPoints;
+        private string name;
 
-        public SecondHero()
+        public SecondHero(string name)
         {
             this.playerTwoDeck = new Deck();
             this.yuGiOhCardsInHand = new List<ICard>();
             this.generalHealthPoints = GENERAL_HEALTH_POINTS;
+            this.Name = name;
         }
 
         public IDeck PlayerDeck
@@ -39,9 +41,15 @@
             get { return this.yuGiOhCardsInHand; }
             set { this.yuGiOhCardsInHand = value; }
         }
+
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
        
 
-        public void GiveCardToFirstPlayer()
+        public void GiveCardToSecondPlayer()
         {
             var card = this.playerTwoDeck.DrawNextCard();
             this.yuGiOhCardsInHand.Add(card);
@@ -55,7 +63,7 @@
             }
             for (int i = 0; i < numberOfPlayableCards; i++)
             {
-                this.GiveCardToFirstPlayer();
+                this.GiveCardToSecondPlayer();
             }
 
         }
@@ -66,6 +74,15 @@
                 Console.WriteLine("{0} ", item.ToString());
                 Thread.Sleep(1000);
             }
+        }
+
+        public void DrawNextCardInHand()
+        {
+            if (this.playerTwoDeck.CardsLeft < 1)
+            {
+                throw new ExtendedGameExeption("The general YuGiOh deck doesn`t has more cards!");
+            }
+            this.yuGiOhCardsInHand.Add(this.playerTwoDeck.DrawNextCard());
         }
 
     }
