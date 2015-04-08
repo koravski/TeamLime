@@ -6,5 +6,7 @@
         string InfoText { get; set; }
 
         string PathToImage { get; set; }
+
+        void SwitchPosition();
     }
 }

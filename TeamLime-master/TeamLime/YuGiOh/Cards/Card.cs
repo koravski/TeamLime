@@ -7,11 +7,13 @@
     {
         private string infoText;
         private string pathToImage;
+        public bool isInDefense;
 
         public Card(string infoText, string pathToImage)
         {
             this.InfoText = infoText;
             this.PathToImage = pathToImage;
+            this.isInDefense = false;
         }
         public string InfoText
         {
@@ -40,6 +42,11 @@
             {
                 this.pathToImage = value;
             }
+        }
+
+        public virtual void SwitchPosition()
+        {
+            this.isInDefense = !this.isInDefense;
         }
 
         public override string ToString()

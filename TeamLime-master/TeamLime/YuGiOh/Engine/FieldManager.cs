@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace YuGiOh.Engine
 {
     using Extensions;
+    using YuGiOh.Cards;
     using YuGiOh.Players;
 
     public class FieldManager: IFieldManager
@@ -24,7 +25,7 @@ namespace YuGiOh.Engine
 
         public void Attack(CardId atackingCard, Extensions.CardId defendingCard)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("Sorry, It`s DEMO version.Next couple weeks it`s gonna be finished.");
         }
 
         public void Play(CardId atackingCard)
@@ -32,34 +33,32 @@ namespace YuGiOh.Engine
             string cardName = atackingCard.CardName;
             PlayerIndentifier choosenPlayer = atackingCard.PlayerIdentifier;
 
-            if ((int)choosenPlayer == 1)
+            var hand = choosenPlayer == (PlayerIndentifier)1 ? playerOne.YuGiOhCardInHand : playerTwo.YuGiOhCardInHand;
+            var card = hand.FirstOrDefault(c => c.GetType().Name == cardName);
+
+            if (card == null)
             {
-                foreach (var card in playerOne.YuGiOhCardInHand)
-                {
-                    if (card.GetType().Name == cardName)
-                    {
-                        playerOne.SendCardToField(card);
-                        this.battlefield.cardsOnField.Add(card);
-                    }
-                }
+                throw new ArgumentNullException("card to play needed");
             }
-            else
-            {
-                foreach (var card in playerTwo.YuGiOhCardInHand)
-                {
-                    if (card.GetType().Name == cardName)
-                    {
-                        playerTwo.SendCardToField(card);
-                        this.battlefield.cardsOnField.Add(card);
-                    }
-                }
-            }
+
+            this.battlefield.cardsOnField.Add(card);
             
         }
 
         public void Switch(CardId atackingCard)
         {
-            throw new NotImplementedException();
+
+            string cardName = atackingCard.CardName;
+            PlayerIndentifier choosenPlayer = atackingCard.PlayerIdentifier;
+
+            foreach (var card in this.battlefield.cardsOnField)
+            {
+                if (card.GetType().Name == cardName)
+                {
+                    card.SwitchPosition();
+                    break;
+                }
+            }
         }
     }
 }
