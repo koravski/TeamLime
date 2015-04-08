@@ -3,6 +3,7 @@
     using YuGiOh.Cards;
     using YuGiOh.Cards.Monsters;
     using YuGiOh.Players;
+    using YuGiOh.Extensions.Helper;
     using System.Collections.Generic;
     using System;
     using System.Threading;
@@ -13,6 +14,8 @@
         
         public static void Main()
         {
+            Constants.GameSound(Constants.PlaySound);
+
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
             FirstHero playerOne = new FirstHero();

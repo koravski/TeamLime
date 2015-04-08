@@ -66,7 +66,9 @@
     <Compile Include="Engine\IBattleManager.cs" />
     <Compile Include="Engine\ICommandReader.cs" />
     <Compile Include="Extensions\CardId.cs" />
+    <Compile Include="Extensions\CardType.cs" />
     <Compile Include="Extensions\ExtendedGameExeption.cs" />
+    <Compile Include="Extensions\Helper.cs" />
     <Compile Include="Extensions\PlayerIndentifier.cs" />
     <Compile Include="Interfaces\IField.cs" />
     <Compile Include="Players\FirstHero.cs" />
