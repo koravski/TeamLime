@@ -83,6 +83,21 @@
             }
         }
 
+        public override void SwitchPosition()
+        {
+            this.isInDefense = !this.isInDefense;
+            if (isInDefense)
+            {
+                this.attack -= 40;
+                this.defence += 50;
+            }
+            else
+            {
+                this.attack += 30;
+                this.defence -= 25;
+            }
+        }
+
         public override string ToString()
         {
             return base.ToString() +  string.Format("| Attack: {0} | Defense: {1} |", this.Attack,this.Defence);
