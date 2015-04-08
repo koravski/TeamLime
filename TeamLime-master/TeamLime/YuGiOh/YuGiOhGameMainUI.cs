@@ -53,6 +53,8 @@
             
             while (true)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("\nSir, enter your command:\n");
                 var commandLine = Console.ReadLine();
                 commandReader.RunCommand(fieldManager, commandLine);
 
