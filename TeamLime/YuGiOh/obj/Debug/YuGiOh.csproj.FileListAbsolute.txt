@@ -1,4 +1,0 @@
-C:\Users\Pav\Desktop\C#\OOP\TeamWork\07. TimeLime\TeamLime-master\TeamLime\YuGiOh\bin\Debug\YuGiOh.exe.config
-C:\Users\Pav\Desktop\C#\OOP\TeamWork\07. TimeLime\TeamLime-master\TeamLime\YuGiOh\obj\Debug\YuGiOh.exe
-C:\Users\Pav\Desktop\C#\OOP\TeamWork\07. TimeLime\TeamLime-master\TeamLime\YuGiOh\obj\Debug\YuGiOh.pdb
-C:\Users\Pav\Desktop\C#\OOP\TeamWork\07. TimeLime\TeamLime-master\TeamLime\YuGiOh\obj\Debug\YuGiOh.csprojResolveAssemblyReference.cache

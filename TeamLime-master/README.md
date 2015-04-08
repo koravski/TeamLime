@@ -5,32 +5,13 @@ Team Lime
 Features
 --------
 
--Play Modes
-	- Two Player mode
-
 - Attack between monsters
 - Play a card from hand
 - Attack to defense mode
 - Implemented three types of card
 	- Monster Card
-		-ArchfiendSoldier
-		-EkzodiA
-		-GeminiElf
-		-GeneWarpedWarwolf
-		-MadDogOfDarkness
-		-VorseRaider
 	- Spell Card
-		-DoubleSummon
-		-LightningVortex
-		-MysticalSpaceTyphoon
-		-PotOfGreed
-		-Raigeki
-		-SwordsOfRevealingLight
 	- Trap Card
-		-DivineWrath
-		-MirrorForce
-		-NegateAttack
-		-WallOfRevealingLight
 
 
 Installation
