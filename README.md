@@ -3,7 +3,7 @@
 # Telerik Academy Teamwork Project (Course OOP)
 --------
 
-Card Game of type (Yu-Gi-Oh)
+##Card Game of type (Yu-Gi-Oh)
 
 Team Lime is presenting you a game of cards using as a model and theme the popular Yu-Gi-Oh.
 ( http://www.yugioh-card.com/en/products/duel_generation.html )
