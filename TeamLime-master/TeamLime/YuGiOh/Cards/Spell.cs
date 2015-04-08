@@ -24,5 +24,9 @@
                 this.spellType = value;
             }
         }
+        public override string ToString()
+        {
+            return base.ToString() +  string.Format("| Effect: {0} |", this.InfoText);
+        }
     }
 }
