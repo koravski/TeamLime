@@ -4,11 +4,13 @@
     using System.Globalization;
     using System.Linq;
 
+    using YuGiOh.Interfaces;
     using YuGiOh.Extensions;
     using YuGiOh.Players;
 
-    class CommandReader : ICommandReader
+    public class CommandReader: ICommandReader
     {
+
         // направих структ който да ползваме за идентификация на картите по име и собственик, така ше ги подаваме между енджина и инпута
         // ще ти ги подавам така и ти ще ги търсиш в енджина на борда, защото иначе ще се вържа към енджина, а мисля че не е добре.
         // направих и още един енум за плейърите
@@ -24,11 +26,11 @@
         private readonly string[] possibleComands = new string[] { "play", "attack", "switch" };
 
         public void RunCommand(BattleManager battleManager, string commandString)
-        {      
+        {
             if (commandString == null)
             {
                 throw new ArgumentNullException("no command");
-            }            
+            }
 
             ProcessCommand(battleManager, commandString);
         }
@@ -51,7 +53,7 @@
             {
                 ProcessAttackCommand(battleManager, commandArguments.Skip(1).ToArray());
             }
-            
+
             else if (command == "switch")
             {
                 ProcessSwitchCommand(battleManager, commandArguments.Skip(1).ToArray());
@@ -62,7 +64,7 @@
         {
             CardId cardToPlay = new CardId(commandArguments[0], (PlayerIndentifier)int.Parse(commandArguments[1]));
 
-            battleManager.Play(cardToPlay);
+            //battleManager.Play(cardToPlay);
         }
 
         private void ProcessAttackCommand(BattleManager battleManager, string[] commandArguments)
@@ -85,14 +87,14 @@
             CardId atackingCard = new CardId(commandArguments[0], (PlayerIndentifier)int.Parse(commandArguments[1]));
             CardId defendingCard = new CardId(commandArguments[2], (PlayerIndentifier)int.Parse(commandArguments[3]));
 
-            battleManager.Attack(atackingCard, defendingCard);
+            //battleManager.Attack(atackingCard, defendingCard);
         }
 
         private void ProcessSwitchCommand(BattleManager battleManager, string[] commandArguments)
         {
             CardId cardToSwitch = new CardId(commandArguments[0], (PlayerIndentifier)int.Parse(commandArguments[1]));
 
-            battleManager.Switch(cardToSwitch);
+            //battleManager.Switch(cardToSwitch);
         }     
     }
 }

@@ -42,11 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BattleField.cs" />
-    <Compile Include="CardsInHand.cs" />
     <Compile Include="Cards\MonsterAttribute.cs" />
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\Monster.cs" />
     <Compile Include="Cards\Monsters\ArchfiendSoldier.cs" />
+    <Compile Include="Cards\Monsters\EkzodiA.cs" />
     <Compile Include="Cards\Monsters\GeminiElf.cs" />
     <Compile Include="Cards\Monsters\GeneWarpedWarwolf.cs" />
     <Compile Include="Cards\Monsters\MadDogOfDarkness.cs" />

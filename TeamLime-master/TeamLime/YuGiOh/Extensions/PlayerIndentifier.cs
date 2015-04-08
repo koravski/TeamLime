@@ -1,8 +1,10 @@
 ﻿namespace YuGiOh.Extensions
 {
+    using YuGiOh.Players;
+
     public enum PlayerIndentifier
     {
-        FirstPlayer = 1,
-        SecondPlayer
+        FirstHero = 1,
+        SecondHero = 2
     }
 }

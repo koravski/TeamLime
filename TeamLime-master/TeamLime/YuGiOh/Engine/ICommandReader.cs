@@ -1,6 +1,8 @@
 ﻿namespace YuGiOh.Engine
 {
-    public interface  ICommandReader
+    using System;
+
+    public interface ICommandReader
     {
         void RunCommand(BattleManager battleManager, string command);
     }

@@ -1,6 +1,6 @@
 ﻿namespace YuGiOh.Extensions
 {
-    struct CardId
+    public struct CardId
     {
         public string CardName;
         public PlayerIndentifier PlayerIdentifier;
